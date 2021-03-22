@@ -67,7 +67,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -117,11 +117,13 @@
           <h3 class="section-title">Чем мы занимаемся</h3>
           <ul class="stack">
             <li class="stack-list">
+              
               <img
                 src="./images/web_development.jpg"
                 alt="Разработка ваших сайтов"
                 width="370"
               />
+              <p class="stack-text">Десктопные приложения</p>
             </li>
             <li class="stack-list">
               <img
@@ -129,6 +131,7 @@
                 alt="Разработка ваших мобильних приложений"
                 width="370"
               />
+              <p class="stack-text">Мобильные приложения</p>
             </li>
             <li class="stack-list">
               <img
@@ -136,6 +139,7 @@
                 alt="Дизайн ваших проектов"
                 width="370"
               />
+              <p class="stack-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -280,46 +284,44 @@
       </section>
 
      <!-- Our clients--> 
+
       <section class="section">
         <div class="container">
           <h3 class="section-title">Постоянные клиенты</h3>
           <ul class="clients-list">
-            <li class="clients-list_item"><a href="" class="client-list-item_style">
+            <li class="clients-list_item"><a href="">
               <svg class="clients-list-logo">
                 <use href="./images/icons.svg#icon-yaco"></use>
               </svg> 
             </a></li>
-            <li class="clients-list_item"><a href="" class="client-list-item_style">
+            <li class="clients-list_item"><a href="">
               <svg class="clients-list-logo">
                 <use href="./images/icons.svg#icon-company"></use>
               </svg>
             </a></li>
-            <li class="clients-list_item"><a href="" class="client-list-item_style">
+            <li class="clients-list_item"><a href="">
               <svg class="clients-list-logo">
                 <use href="./images/icons.svg#icon-company_2"></use>
               </svg>
             </a></li>
-            <li class="clients-list_item"><a href="" class="client-list-item_style">
+            <li class="clients-list_item"><a href="">
               <svg class="clients-list-logo">
                 <use href="./images/icons.svg#icon-foster_peters"></use>
               </svg>
             </a></li>
-            <li class="clients-list_item"><a href="" class="client-list-item_style">
+            <li class="clients-list_item"><a href="">
               <svg class="clients-list-logo">
                 <use href="./images/icons.svg#icon-brand"></use>
               </svg>
             </a></li>
-            <li class="clients-list_item"><a href="" class="client-list-item_style">
+            <li class="clients-list_item"><a href="">
               <svg class="clients-list-logo">
                 <use href="./images/icons.svg#icon-company_3"></use>
               </svg>
             </a></li>
           </ul>
-          
         </div>
       </section>
-
-
     </main>
 
     <!--Footer-->
@@ -330,7 +332,7 @@
           <address class="footer-style">
             <ul>
               <li class="footer-logo">
-                <a class="nav-link" href="./index.html"
+                <a class="logo-link" href="./index.html"
                   ><span class="logo-blue">Web</span
                   ><span class="logo-white">Studio</span></a
                 >
@@ -381,8 +383,19 @@
             </ul>
           </div>
         </div>
-        
       </section>
     </footer>
+
+    <!--Modal window-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-close_button" type="button" >
+          <svg class="modal-close_icon">
+            <use  href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
